@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="registerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.RegisterStageController">
+  <children>
+    <Label fx:id="loginLabel" layoutX="13.0" layoutY="14.0" text="Login:" />
+    <Label fx:id="firstNameLabel" layoutX="13.0" layoutY="38.0" text="First name:" />
+    <Label fx:id="lastNameLabel" layoutX="13.0" layoutY="64.0" text="Last name:" />
+    <Label fx:id="passwordLabel" layoutX="13.0" layoutY="90.0" text="Password:" />
+    <Label fx:id="eMailLabel" layoutX="13.0" layoutY="117.0" text="E-mail:" />
+    <Label fx:id="birthdayLabel" layoutX="13.0" layoutY="145.0" text="Birthday:" />
+    <Label fx:id="genderLabel" layoutX="13.0" layoutY="171.0" text="Gender:" />
+    <Label fx:id="countryLabel" layoutX="14.0" layoutY="197.0" text="Country:" />
+    <TextField fx:id="loginField" layoutX="86.0" layoutY="11.0" onKeyReleased="#loginTypedAction" prefWidth="146.0" promptText="login" text="" />
+    <TextField fx:id="firstNameField" layoutX="86.0" layoutY="35.0" onKeyReleased="#firstTypedAction" prefWidth="146.0" promptText="first name" text="" />
+    <TextField fx:id="lastNameField" layoutX="86.0" layoutY="61.0" onKeyReleased="#lastTypedAction" prefWidth="146.0" promptText="last name" text="" />
+    <PasswordField fx:id="passwordField" layoutX="86.0" layoutY="87.0" onKeyReleased="#passwordTypedAction" prefWidth="146.0" promptText="password" text="" />
+    <TextField fx:id="eMailField" layoutX="86.0" layoutY="114.0" onKeyReleased="#eMailTypedAction" prefWidth="146.0" promptText="e-mail" text="" />
+    <ComboBox fx:id="dayCombo" layoutX="86.0" layoutY="143.0" minWidth="36.0" prefHeight="21.0" prefWidth="47.0" promptText="">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="1" />
+          <String fx:value="2" />
+          <String fx:value="3" />
+          <String fx:value="4" />
+          <String fx:value="5" />
+          <String fx:value="6" />
+          <String fx:value="7" />
+          <String fx:value="8" />
+          <String fx:value="9" />
+          <String fx:value="10" />
+          <String fx:value="11" />
+          <String fx:value="12" />
+          <String fx:value="13" />
+          <String fx:value="14" />
+          <String fx:value="15" />
+          <String fx:value="16" />
+          <String fx:value="17" />
+          <String fx:value="18" />
+          <String fx:value="19" />
+          <String fx:value="20" />
+          <String fx:value="21" />
+          <String fx:value="22" />
+          <String fx:value="23" />
+          <String fx:value="24" />
+          <String fx:value="25" />
+          <String fx:value="26" />
+          <String fx:value="27" />
+          <String fx:value="28" />
+          <String fx:value="29" />
+          <String fx:value="30" />
+          <String fx:value="31" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="monthCombo" layoutX="136.0" layoutY="143.0" onAction="#monthSelectionAction" prefHeight="21.0" prefWidth="75.0" promptText="">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <!--<String fx:value="January" />-->
+          <!--<String fx:value="February" />-->
+          <!--<String fx:value="March" />-->
+          <!--<String fx:value="April" />-->
+          <!--<String fx:value="May" />-->
+          <!--<String fx:value="June" />-->
+          <!--<String fx:value="July" />-->
+          <!--<String fx:value="August" />-->
+          <!--<String fx:value="September" />-->
+          <!--<String fx:value="October" />-->
+          <!--<String fx:value="November" />-->
+          <!--<String fx:value="December" />-->
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="yearCombo" layoutX="218.0" layoutY="143.0" onAction="#yearSelectionAction" prefHeight="21.0" prefWidth="75.0" promptText="">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="1950" />
+          <String fx:value="1951" />
+          <String fx:value="1952" />
+          <String fx:value="1953" />
+          <String fx:value="1954" />
+          <String fx:value="1955" />
+          <String fx:value="1956" />
+          <String fx:value="1957" />
+          <String fx:value="1958" />
+          <String fx:value="1959" />
+          <String fx:value="1960" />
+          <String fx:value="1961" />
+          <String fx:value="1962" />
+          <String fx:value="1963" />
+          <String fx:value="1964" />
+          <String fx:value="1965" />
+          <String fx:value="1966" />
+          <String fx:value="1967" />
+          <String fx:value="1968" />
+          <String fx:value="1969" />
+          <String fx:value="1970" />
+          <String fx:value="1971" />
+          <String fx:value="1972" />
+          <String fx:value="1973" />
+          <String fx:value="1974" />
+          <String fx:value="1975" />
+          <String fx:value="1976" />
+          <String fx:value="1977" />
+          <String fx:value="1978" />
+          <String fx:value="1979" />
+          <String fx:value="1980" />
+          <String fx:value="1981" />
+          <String fx:value="1982" />
+          <String fx:value="1983" />
+          <String fx:value="1984" />
+          <String fx:value="1985" />
+          <String fx:value="1986" />
+          <String fx:value="1987" />
+          <String fx:value="1988" />
+          <String fx:value="1989" />
+          <String fx:value="1990" />
+          <String fx:value="1991" />
+          <String fx:value="1992" />
+          <String fx:value="1993" />
+          <String fx:value="1994" />
+          <String fx:value="1995" />
+          <String fx:value="1996" />
+          <String fx:value="1997" />
+          <String fx:value="1998" />
+          <String fx:value="1999" />
+          <String fx:value="2000" />
+          <String fx:value="2001" />
+          <String fx:value="2002" />
+          <String fx:value="2003" />
+          <String fx:value="2004" />
+          <String fx:value="2005" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="genderCombo" layoutX="86.0" layoutY="169.0" prefHeight="21.0" prefWidth="97.0" promptText="">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="countryCombo" layoutX="86.0" layoutY="195.0" prefHeight="21.0" prefWidth="125.0" promptText="">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Ukraine" />
+          <String fx:value="Russian federation" />
+          <String fx:value="Belarus" />
+          <String fx:value="USA" />
+          <String fx:value="Germany" />
+          <String fx:value="England" />
+          <String fx:value="France" />
+          <String fx:value="Spain" />
+          <String fx:value="Finland" />
+          <String fx:value="Norway" />
+          <String fx:value="Sweden" />
+          <String fx:value="Netherlands" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button fx:id="cancelButton" layoutX="12.0" layoutY="249.0" mnemonicParsing="false" onAction="#cancelButtonAction" prefWidth="87.0" text="Cancel" />
+    <Button fx:id="registerButton" layoutX="206.0" layoutY="249.0" mnemonicParsing="false" onAction="#registerButtonAction" prefWidth="87.0" text="Register" />
+    <Label fx:id="errorLabel" layoutX="13.0" layoutY="222.0" prefWidth="280.0" text="Error. Such nickname has already been used." visible="false" />
+  </children>
+</AnchorPane>

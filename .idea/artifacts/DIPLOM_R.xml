@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="DIPLOM_R">
+    <output-path>$PROJECT_DIR$/out/artifacts/DIPLOM_R</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="JavaFXApp.jar">
+        <element id="module-output" name="Ruban_Diplom" />
+        <element id="library" level="project" name="ojdbc6" />
+        <element id="library" level="project" name="poi-3.13-20150929" />
+        <element id="library" level="project" name="xmlbeans-2.6.0" />
+      </element>
+    </root>
+  </artifact>
+</component>

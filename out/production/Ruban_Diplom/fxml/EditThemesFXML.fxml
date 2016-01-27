@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="539.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.EditThemesController">
+  <children>
+    <Label fx:id="themesLabel" layoutX="7.0" layoutY="11.0" text="Themes:" />
+    <ListView fx:id="themesList" editable="false" layoutX="7.0" layoutY="28.0" onMouseClicked="#themeMouseClicked" prefHeight="283.0" prefWidth="141.0" />
+    <Button fx:id="deleteButton" disable="false" layoutX="66.0" layoutY="318.0" mnemonicParsing="false" onAction="#deleteAction" prefWidth="82.0" text="Delete" />
+    <Button fx:id="backButton" layoutX="450.0" layoutY="318.0" mnemonicParsing="false" onAction="#backAction" prefWidth="82.0" text="Back" />
+    <TitledPane id="titledPane" fx:id="newThemeTitledPane" animated="false" layoutX="305.0" layoutY="11.0" prefHeight="188.0" prefWidth="226.0" text="Add new theme">
+      <content>
+        <AnchorPane id="Content" fx:id="newThemePane" minHeight="0.0" minWidth="0.0" prefHeight="140.0" prefWidth="222.0">
+          <children>
+            <Label fx:id="themeNameLabel" layoutX="7.0" layoutY="9.0" text="New theme name:" />
+            <TextField fx:id="themeNameField" layoutX="111.0" layoutY="6.0" onKeyReleased="#nameTypedAction" prefWidth="107.0" promptText="Name" />
+            <Label fx:id="iconLabel" layoutX="7.0" layoutY="34.0" text="Set theme icon:" />
+            <Button fx:id="browseButton" layoutX="143.0" layoutY="32.0" mnemonicParsing="false" onAction="#browseAction" prefWidth="74.0" text="Browse" />
+            <ImageView fx:id="iconImage" disable="false" fitHeight="48.0" fitWidth="48.0" layoutX="169.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" smooth="true" />
+            <Label fx:id="errorLabel" layoutX="7.0" layoutY="115.0" prefWidth="210.0" text="Error. Write a theme name." visible="false" />
+            <Button fx:id="addButton" layoutX="136.0" layoutY="138.0" mnemonicParsing="false" onAction="#addAction" prefWidth="82.0" text="Add" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Label fx:id="lexemsLabel" layoutX="155.0" layoutY="11.0" text="Lexems:" />
+    <ListView fx:id="lexemsList" layoutX="155.0" layoutY="28.0" onMouseClicked="#lexemMouseClicked" prefHeight="283.0" prefWidth="141.0" />
+    <Button fx:id="deleteLexemButton" layoutX="215.0" layoutY="318.0" mnemonicParsing="false" onAction="#deleteLexemAction" prefWidth="82.0" text="Delete" />
+    <TitledPane fx:id="newLexemTitledPane" animated="false" layoutX="305.0" layoutY="202.0" prefHeight="109.0" prefWidth="226.0" text="Add new lexem">
+      <content>
+        <AnchorPane id="Content" fx:id="newLexemPane" minHeight="0.0" minWidth="0.0" prefHeight="85.0" prefWidth="222.0">
+          <children>
+            <Label fx:id="lexemNameLabel" layoutX="7.0" layoutY="6.0" prefWidth="97.0" text="New lexem name:" />
+            <TextField fx:id="lexemNameField" layoutX="111.0" layoutY="3.0" onKeyReleased="#lexemTypedAction" prefWidth="107.0" promptText="Name" />
+            <Label fx:id="errorLexemLabel" layoutX="7.0" layoutY="33.0" prefWidth="210.0" text="Error. Such lexem has already exists." visible="false" />
+            <Button fx:id="addLexemButton" layoutX="136.0" layoutY="59.0" mnemonicParsing="false" onAction="#addLexemAction" prefWidth="82.0" text="Add" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+  </children>
+</AnchorPane>

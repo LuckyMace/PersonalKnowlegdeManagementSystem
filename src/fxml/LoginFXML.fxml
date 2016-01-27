@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="loginPane" blendMode="SRC_OVER" cache="true" cacheHint="DEFAULT" disable="false" prefHeight="200.00009999999747" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.LoginStageController">
+  <children>
+    <Label fx:id="loginLabel" layoutX="14.0" layoutY="14.0" minHeight="16.0" minWidth="69.0" prefHeight="16.0" prefWidth="69.0" text="Login:" />
+    <Label fx:id="passwordLabel" layoutX="14.0" layoutY="52.0" minHeight="16.0" minWidth="69.0" prefHeight="16.0" prefWidth="69.0" text="Password:" />
+    <TextField fx:id="loginField" layoutX="72.0" layoutY="11.0" onKeyReleased="#loginTypedAction" prefWidth="171.0" promptText="login" text="ruban111" />
+    <PasswordField fx:id="passwordField" layoutX="72.0" layoutY="49.0" onKeyPressed="#passwordTypedAction" prefWidth="171.0" promptText="password" text="123456" />
+    <Button fx:id="connectButton" layoutX="14.0" layoutY="136.0" onAction="#connectButtonAction" prefHeight="22.0" prefWidth="123.0" text="Database connect" />
+    <Button fx:id="registerButton" layoutX="14.0" layoutY="166.0" mnemonicParsing="false" onAction="#registerButtonAction" prefWidth="123.0" text="Register" />
+    <Button fx:id="loginButton" layoutX="183.0" layoutY="136.0" mnemonicParsing="false" onAction="#loginButtonAction" prefWidth="123.0" text="Login" />
+    <Button fx:id="exitButton" layoutX="183.0" layoutY="166.0" mnemonicParsing="false" onAction="#exitButtonAction" prefWidth="123.0" text="Exit" />
+    <Label fx:id="errorLabel" layoutX="14.0" layoutY="78.0" prefWidth="229.0" text="Error. Invalid login or password." visible="false" />
+  </children>
+</AnchorPane>

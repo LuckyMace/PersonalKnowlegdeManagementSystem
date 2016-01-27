@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="Ruban_Diplom:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ruban_Diplom_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Ruban_Diplom.jar">
+        <element id="module-output" name="Ruban_Diplom" />
+      </element>
+      <element id="library" level="project" name="xmlbeans-2.6.0" />
+      <element id="library" level="project" name="ojdbc6" />
+      <element id="library" level="project" name="poi-3.13-20150929" />
+    </root>
+  </artifact>
+</component>

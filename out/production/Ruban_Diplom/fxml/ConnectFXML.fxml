@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane fx:id="connectPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="221.5" prefWidth="295.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.ConnectStageController">
+  <children>
+    <Label fx:id="hostnameLabel" layoutX="14.0" layoutY="14.0" text="Hostname:" />
+    <Label fx:id="portLabel" layoutX="14.0" layoutY="42.0" text="Port:" />
+    <Label fx:id="usernameLabel" layoutX="14.0" layoutY="70.0" text="Username:" />
+    <Label fx:id="passwordLabel" layoutX="13.0" layoutY="99.0" text="Password:" />
+    <TextField fx:id="hostnameField" editable="true" layoutX="95.0" layoutY="11.0" onKeyReleased="#hostnameTypedAction" prefWidth="189.0" promptText="hostname" text="localhost" />
+    <TextField fx:id="portField" layoutX="95.0" layoutY="39.0" onKeyReleased="#portTypedAction" prefWidth="189.0" promptText="port" text="1521" />
+    <TextField fx:id="usernameField" layoutX="95.0" layoutY="67.0" onKeyReleased="#usernameTypedAction" prefWidth="189.0" promptText="username" text="DIPLOM_RUBAN" />
+    <TextField fx:id="passwordField" layoutX="95.0" layoutY="96.0" onKeyReleased="#passwordTypedAction" prefWidth="189.0" promptText="password" text="DIPLOM_RUBAN" />
+    <Button fx:id="cancelButton" layoutX="14.0" layoutY="187.0" mnemonicParsing="false" onAction="#cancelButtonAction" prefWidth="72.0" text="Cancel" />
+    <Button fx:id="connectButton" layoutX="209.0" layoutY="187.0" mnemonicParsing="false" onAction="#connectButtonAction" prefWidth="72.0" text="Connect" />
+    <Label fx:id="sidLabel" layoutX="14.0" layoutY="128.0" text="SID:" />
+    <TextField fx:id="sidField" layoutX="95.0" layoutY="125.0" onKeyReleased="#sidTypedAction" prefWidth="189.0" promptText="SID" text="orcl" />
+    <Label fx:id="errorLabel" layoutX="14.0" layoutY="158.0" prefWidth="267.0" text="Error. Can't connect to database." visible="false" />
+  </children>
+</AnchorPane>

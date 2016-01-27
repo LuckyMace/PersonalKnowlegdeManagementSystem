@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="newDocumentStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="261.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.NewDocumentController">
+  <children>
+    <Label fx:id="nameLabel" layoutX="14.0" layoutY="14.0" text="Document name:" />
+    <Label id="themeLabel" fx:id="fullThemeLabel" layoutX="14.0" layoutY="66.0" text="Document theme:" />
+    <RadioButton fx:id="manualChooseRadio" layoutX="14.0" layoutY="93.0" mnemonicParsing="false" onAction="#manualAction" text="Manual theme choose" />
+    <Label fx:id="themeLabel" layoutX="14.0" layoutY="118.0" text="Theme:" />
+    <RadioButton fx:id="autoChooseRadio" layoutX="14.0" layoutY="147.0" mnemonicParsing="false" onAction="#autoAction" text="Auto theme choose" />
+    <TextField fx:id="nameField" layoutX="115.0" layoutY="11.0" onKeyReleased="#nameTypedAction" prefWidth="137.0" promptText="Name" />
+    <ComboBox fx:id="themeCombo" layoutX="116.0" layoutY="118.0" onAction="#showThemesAction" prefHeight="21.0" prefWidth="137.0" promptText="Show themes">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Show themes" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label fx:id="resultLabel" layoutX="14.0" layoutY="173.0" text="Result:" />
+    <TextField fx:id="resultField" disable="true" layoutX="83.0" layoutY="170.0" prefWidth="95.0" />
+    <Label fx:id="selectLabel" layoutX="14.0" layoutY="41.0" text="Select document:" />
+    <Button fx:id="browseButton" layoutX="170.0" layoutY="39.0" mnemonicParsing="false" onAction="#browseAction" prefWidth="83.0" text="Browse" />
+    <Label fx:id="byLabel" layoutX="184.0" layoutY="173.0" text="by" />
+    <TextField fx:id="percentField" disable="true" layoutX="200.0" layoutY="170.0" prefWidth="39.000099999997474" />
+    <Label fx:id="percentLabel" layoutX="243.0" layoutY="173.0" text="\%" />
+    <Button fx:id="cancelButton" layoutX="14.0" layoutY="225.0" mnemonicParsing="false" onAction="#cancelAction" prefWidth="83.0" text="Cancel" />
+    <Button fx:id="addButton" layoutX="170.0" layoutY="225.0" mnemonicParsing="false" onAction="#addAction" prefWidth="83.0" text="Add" />
+    <Label fx:id="errorLabel" layoutX="14.0" layoutY="200.0" prefWidth="239.0" text="Error. Write a name." visible="false" />
+  </children>
+</AnchorPane>

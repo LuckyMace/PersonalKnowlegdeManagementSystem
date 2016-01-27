@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: xmlbeans-2.6.0.jar ojdbc6.jar poi-3.13-20150929.jar poi-oo
+ xml-3.13-20150929.jar poi-ooxml-schemas-3.13-20150929.jar poi-scratch
+ pad-3.13-20150929.jar
+Main-Class: javaclass.Main
+

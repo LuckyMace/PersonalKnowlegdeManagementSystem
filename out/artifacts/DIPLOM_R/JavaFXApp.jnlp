@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXApp.jnlp">
+  <information>
+    <title>Sample JavaFX Application</title>
+    <vendor>Unknown vendor</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaFXApp.jar" size="73890" download="eager" />
+    <jar href="ojdbc6.jar" size="3389454" download="eager" />
+    <jar href="poi-3.13-20150929.jar" size="2497380" download="eager" />
+    <jar href="poi-ooxml-3.13-20150929.jar" size="1142386" download="eager" />
+    <jar href="poi-ooxml-schemas-3.13-20150929.jar" size="5641539" download="eager" />
+    <jar href="poi-scratchpad-3.13-20150929.jar" size="1307277" download="eager" />
+    <jar href="xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <applet-desc  width="600" height="400" main-class="com.javafx.main.NoJavaFXFallback"  name="DIPLOM_R" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="600" height="400" main-class="sample.Main"  name="DIPLOM_R" />
+  <update check="background"/>
+</jnlp>
