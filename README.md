@@ -1,6 +1,6 @@
 # PersonalKnowlegdeManagementSystem
 Personal Knowledge Management System with use of classification and clusterization algorithms
-Java (IntelliJ IDEA 14.2, JDK 1.7) + JDBC + Oracle 11gR2 + Apache POI + JavaFX/n
+Java (IntelliJ IDEA 14.2, JDK 1.7) + JDBC + Oracle 11gR2 + Apache POI + JavaFX
 
 System was created like a viewer of documents (.docx files) with use of algorithms for automatization user's work.
 - File dbcreate.sql IS USING to create database in DBMS Oracle 11gR2;
